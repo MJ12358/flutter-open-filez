@@ -1,0 +1,27 @@
+name: flutter_open_filez
+description: A new Flutter plugin project.
+version: 0.0.1
+repository: https://github.com/mj12358/flutter-open-filez
+
+environment:
+  sdk: ">=3.0.5 <4.0.0"
+  flutter: ">=3.3.0"
+
+dependencies:
+  dart_extensionz: ^4.5.0
+  flutter:
+    sdk: flutter
+  path_provider: ^2.0.15
+  plugin_platform_interface: ^2.0.2
+
+dev_dependencies:
+  dart_lintz: ^1.2.0
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  plugin:
+    platforms:
+      android:
+        package: com.mj12358.flutter_open_filez
+        pluginClass: FlutterOpenFilezPlugin

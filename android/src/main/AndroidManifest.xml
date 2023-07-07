@@ -1,0 +1,31 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  package="com.mj12358.flutter_open_filez">
+
+  <application>
+    <!-- Example #0 (from the "OpenFile" package) -->
+    <provider android:name="com.mj12358.flutter_open_filez.FileProvider"
+      android:authorities="${applicationId}.fileProvider.com.mj12358.flutter_open_filez"
+      android:exported="false"
+      android:grantUriPermissions="true"
+      tools:replace="android:authorities">
+      <meta-data android:name="android.support.FILE_PROVIDER_PATHS"
+        android:resource="@xml/file_paths" />
+    </provider>
+
+    <!-- Example #1 (built-in fileprovider) -->
+    <!-- <provider android:name="androidx.core.content.FileProvider" android:authorities="${applicationId}.provider" android:exported="false" android:grantUriPermissions="true">
+      <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/file_paths" />
+    </provider> -->
+
+    <!-- Example #2 (built-in fileprovider) -->
+    <!-- is "example" necessary in the authorities? -->
+    <!-- <provider android:name="android.support.v4.content.FileProvider" android:authorities="com.example.mj12358.flutter_open_filez.fileprovider" android:enabled="true" android:grantUriPermissions="true">
+      <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/file_paths" />
+    </provider> -->
+
+    <!-- Example #3 (alternative syntax) -->
+    <!-- <provider android:name="com.mj12358.flutter_open_filez.FileProvider" android:authorities="com.mj12358.flutter_open_filez.FileProvider" android:exported="false" android:grantUriPermissions="true">
+      <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/file_paths" /> -->
+  </application>
+</manifest>
