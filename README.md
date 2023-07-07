@@ -1,2 +1,5 @@
 # flutter-open-filez
-Flutter Open Filez
+
+## WIP
+
+- This is an attempt to make opening files in [Flutter](https://flutter.dev/) easier and more predictable.
